@@ -1,0 +1,26 @@
+.signInBtn {
+	border-radius: 20px;
+	border: 1px solid #F2eee3;
+	background-color: #F2eee3;
+	color: #a24f5e;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	border-color: #d37556;
+}
+.signUpBtn {
+	border-radius: 20px;
+	border: 1px solid #F2eee3;
+	background-color: #514c4a   ;
+	color: #d8b26e    ;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	border-color: gold  ;
+}
