@@ -18,7 +18,7 @@ function SignInForm() {
 
 	return (
 		<div className="bg-white rounded-2xl shadow-2xl flex w-2/3 max-w-4xl mx-auto my-24 text-center">
-			{/* Sign in Section */}
+
 			<div className="w-3/5 p-5">
 				<div className="text-left font-bold">
 					<span className="text-teal-500">ToDo</span>App
@@ -86,7 +86,7 @@ function SignInForm() {
 				</div>
 			</div>
 
-			{/* Sign up Section */}
+
 			<div className="w-2/5 bg-teal-500 text-white rounded-tr-3xl rounded-br-2xl py-36 px-12">
 				<h1 className="text-3xl font-bold mb-2">Make a List!</h1>
 				<div className="border-2 w-10 border-white inline-block mb-2"></div>

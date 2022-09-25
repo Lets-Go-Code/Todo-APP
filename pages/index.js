@@ -22,7 +22,7 @@ const DUMMY_LIST =[
 
 function HomePage() {
     return (
-    <div className="flex justify-between">
+    <div className="flex justify-around">
         <TodoList todo={DUMMY_LIST}/>
         <DoingList todo={DUMMY_LIST}/>
         <DoneList todo={DUMMY_LIST}/>

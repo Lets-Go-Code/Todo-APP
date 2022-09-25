@@ -10,7 +10,7 @@ function TodoItem(props) {
 	return (
 		<li
 			onClick={handleClick}
-			className="bg-gray-200 font-semibold text-md m-2 p-2 rounded-lg hover:cursor-pointer"
+			className="bg-gray-200 font-semibold text-md m-2 p-2 rounded-lg hover:cursor-pointer hover:bg-gray-300"
 		>
 			<button>{props.title}</button>
 		</li>

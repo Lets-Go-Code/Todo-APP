@@ -18,11 +18,19 @@ function SignUpForm() {
     
 	return (
 		<div className="bg-white rounded-2xl shadow-2xl flex w-2/3 max-w-4xl mx-auto my-24 text-center">
-			{/* Sign in Section */}
+			<div className="w-2/5 bg-teal-500 text-white rounded-tl-3xl rounded-bl-2xl py-36 px-12">
+				<h1 className="text-3xl font-bold mb-2">Welcome!</h1>
+				<div className="border-2 w-10 border-white inline-block mb-2"></div>
+				<p className="mb-10">Make a List with the new to do app list maker.</p>
+				<button
+					onClick={handleClick}
+					className="border-2 rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-teal-500"
+				>
+					Sign In
+				</button>
+			</div>
+
 			<div className="w-3/5 p-5">
-				<div className="text-left font-bold">
-					<span className="text-teal-500">ToDo</span>App
-				</div>
 				<div className="py-10">
 					<h2 className="text-3xl font-bold text-teal-500 mb-2">
 						Make A New Account
@@ -75,21 +83,6 @@ function SignUpForm() {
 						</a>
 					</div>
 				</div>
-			</div>
-
-			{/* Sign up Section */}
-			<div className="w-2/5 bg-teal-500 text-white rounded-tr-3xl rounded-br-2xl py-36 px-12">
-				<h1 className="text-3xl font-bold mb-2">Welcome!</h1>
-				<div className="border-2 w-10 border-white inline-block mb-2"></div>
-				<p className="mb-10">
-					Make a List with the new to do app list maker.
-				</p>
-				<button
-					onClick={handleClick}
-					className="border-2 rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-teal-500"
-				>
-					Sign In
-				</button>
 			</div>
 		</div>
 	);
