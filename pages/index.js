@@ -2,31 +2,27 @@ import DoingList from "../components/todos/doingList";
 import DoneList from "../components/todos/doneList";
 import TodoList from "../components/todos/todoList";
 
-const DUMMY_LIST =[
-    {
-        id: '1',
-        title: 'To Do List 1',
-        description: 'This is the first to do list'
-    },
-    {
-        id: '2',
-        title: 'To Do List 2',
-        description: 'This is the second to do list'
-    },
-    {
-        id: '3',
-        title: 'To Do List 3',
-        description: 'This is the third to do list'
-    },
-]
 
-function HomePage() {
+function HomePage(props) {
     return (
-    <div className="flex justify-around">
-        <TodoList todo={DUMMY_LIST}/>
-        <DoingList todo={DUMMY_LIST}/>
-        <DoneList todo={DUMMY_LIST}/>
-    </div>
+        <div className="flex justify-around">
+            <TodoList todo={props.data} />
+            <DoingList todo={props.data} />
+            <DoneList todo={props.data} />
+        </div>
     )
+}
+
+export async function getStaticProps() {
+    let res = await fetch("http://localhost:3001")
+    let data = await res.json()
+    return {
+        props: {
+            data: data.map(e => ({
+                title : e.title,
+                description : e.description
+            }))
+        }
+    }
 }
 export default HomePage;
